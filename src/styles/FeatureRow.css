@@ -1,0 +1,68 @@
+/* FeatureRow.css – modern, Google-inspirerad containerdesign */
+
+.feature-row-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+  
+  .feature-intro {
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1a3c40;
+    margin-bottom: 2rem;
+  }
+  
+  .feature-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    flex: 1 1 280px;
+    max-width: 300px;
+    background: #ffffffee;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(4px);
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  .feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1a3c40;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-row-wrapper {
+      padding: 2rem 1rem;
+    }
+    .feature-item {
+      padding: 1.5rem;
+    }
+  }
+  

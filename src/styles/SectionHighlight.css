@@ -1,0 +1,35 @@
+/* SectionHighlight.css */
+
+.section-highlight {
+    background: #fff5b1;
+    padding: 3rem 1.5rem;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  .highlight-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-highlight h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    color: #1a3c40;
+  }
+  
+  .section-highlight p {
+    font-size: 1.1rem;
+    font-family: 'Inter', sans-serif;
+    color: #3d3e40;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .highlight-content {
+    margin-top: 1.5rem;
+  }
+  

@@ -1,0 +1,27 @@
+/* StyrkorVinnerHem.css – Visuell bakgrund med mjuk animation */
+
+.background-morph {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    z-index: -1;
+    background: radial-gradient(ellipse at top right, #ffdb00 0%, #fffefc 60%);
+    opacity: 0.15;
+    animation: slowPulse 20s ease-in-out infinite alternate;
+    pointer-events: none;
+    mask-image: radial-gradient(circle at center, black 30%, transparent 100%);
+  }
+  
+  @keyframes slowPulse {
+    0% {
+      transform: scale(1) translateY(0);
+      border-radius: 40% 60% 60% 40% / 50% 40% 60% 50%;
+    }
+    100% {
+      transform: scale(1.15) translateY(30px);
+      border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%;
+    }
+  }
+  

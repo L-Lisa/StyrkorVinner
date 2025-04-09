@@ -1,0 +1,55 @@
+/* WhyBook.css */
+
+.whybook-section {
+    background-color: #fffefc;
+    padding: 4rem 1.5rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .whybook-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: #1a3c40;
+  }
+  
+  .whybook-inner h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #1a3c40;
+  }
+  
+  .whybook-inner h3 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a3c40;
+  }
+  
+  .whybook-inner p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .testimonial {
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    border-left: 4px solid #15ab59;
+    background-color: #f8fafe;
+    color: #3d3e40;
+    border-radius: 0.5rem;
+  }
+  
+  .testimonial footer {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5a5a5a;
+  }
+  

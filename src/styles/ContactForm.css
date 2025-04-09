@@ -1,0 +1,241 @@
+.contact-form-section.experimental {
+    background-color: #fefefe;
+    padding: 6rem 2rem;
+    border-radius: 32px;
+    max-width: 720px;
+    margin: 2rem auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+    color: #1a3c40;
+  }
+  
+  .contact-form-section.experimental h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #134f4a;
+  }
+  
+  .contact-form-section.experimental p {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    background-color: #f8fafe;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    width: 100%;
+    resize: vertical;
+  }
+  
+  .contact-form label {
+    font-weight: 600;
+    color: #134f4a;
+  }
+  
+  .contact-form button {
+    background-color: #15ab59;
+    color: #fffefc;
+    border: none;
+    border-radius: 999px;
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 18px rgba(21, 171, 89, 0.3);
+  }
+  
+  .contact-form button:hover {
+    background-color: #128a48;
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .thank-you {
+    text-align: center;
+    padding: 4rem 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .zoom-in-flash {
+    animation: zoomFlash 0.8s ease-out;
+  }
+  
+  @keyframes zoomFlash {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+      box-shadow: 0 0 0px #fff;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 1;
+      box-shadow: 0 0 50px #fff;
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+  
+  /* Bakgrundsformer */
+  .bg-shape {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #ffbac5;
+    border-radius: 20% 80% 70% 30% / 40% 60% 40% 60%;
+    opacity: 0.25;
+    animation: float 6s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .bg-shape.shape-1 {
+    top: -40px;
+    left: -40px;
+    background-color: #ffe54d;
+    z-index: 1;
+  }
+  
+  .bg-shape.shape-2 {
+    bottom: -30px;
+    right: -30px;
+    background-color: #2727e6;
+    z-index: 2;
+  }
+  
+  .bg-shape:hover {
+    animation-play-state: paused;
+    transform: scale(1.15);
+    z-index: 5;
+  }
+  
+  .burst {
+    animation: burst 0.6s ease forwards !important;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-12px) rotate(5deg);
+    }
+    100% {
+      transform: translateY(0) rotate(-3deg);
+    }
+  }
+  
+  @keyframes burst {
+    0% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5) rotate(12deg);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1) rotate(-5deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Bubblor i bakgrunden efter submit */
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: rise 10s infinite ease-in;
+    z-index: 0;
+  }
+  
+  .bubble-1 {
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    left: 20%;
+    background: #15ab59;
+    animation-delay: 0s;
+  }
+  
+  .bubble-2 {
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: 40%;
+    background: #ffe54d;
+    animation-delay: 2s;
+  }
+  
+  .bubble-3 {
+    width: 25px;
+    height: 25px;
+    bottom: 0;
+    left: 60%;
+    background: #ff4141;
+    animation-delay: 4s;
+  }
+  
+  .bubble-4 {
+    width: 35px;
+    height: 35px;
+    bottom: 0;
+    left: 80%;
+    background: #2727e6;
+    animation-delay: 6s;
+  }
+  .btn-home {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #2727e6;
+    color: #fffefc;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(39, 39, 230, 0.25);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-home:hover {
+    background-color: #1d1db2;
+    transform: translateY(-2px);
+  }
+  
+  @keyframes rise {
+    0% {
+      transform: translateY(0);
+      opacity: 0.15;
+    }
+    100% {
+      transform: translateY(-300px);
+      opacity: 0;
+    }
+  }
+  
